@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn djangonautic.wsgi --log-file -
