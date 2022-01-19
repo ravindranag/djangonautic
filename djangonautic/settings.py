@@ -24,13 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-b=$8r765tsb+e38c8gcmt-zx#7z5_+e4*os=@8aic2-b8-20nv'
-SECRET_KEY = os.getenv('SECRET_KEY') or os.environ('SECRET_KEY')
+SECRET_KEY = 'django-insecure-b=$8r765tsb+e38c8gcmt-zx#7z5_+e4*os=@8aic2-b8-20nv'
+# SECRET_KEY = os.environ('SECRET_KEY') or os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['djangonautic-project.herokuapp.com','localhost','0.0.0.0','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
